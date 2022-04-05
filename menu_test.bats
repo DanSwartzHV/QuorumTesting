@@ -7,7 +7,7 @@ setup() {
     	# as those will point to the bats executable's location or the preprocessed file respectively
     	DIR="$( cd "$( dirname "$BATS_TEST_FILENAME" )" >/dev/null 2>&1 && pwd )"
 	# make executiables in QuroumTesting/test/scripts/ visible to PATH
-	#PATH="$DIR/..:$PATH"
+	PATH="$DIR/..:$PATH"
 }
 
 #teardown() {
@@ -18,7 +18,7 @@ setup() {
 
 #Initial setup should have 4 iqns, and 1 Lun
 init() {
-	printf "1/n1/n1/n1/n1/n2/n3/n2/n2/n2/n1/n9" | ./menu.sh
+	printf "1/n1/n1/n1/n1/n1/n2/n4/n2/n3/n2/n2/n2/n1/n9" | ./menu.sh
 }
 
 @test "Initialize" {
