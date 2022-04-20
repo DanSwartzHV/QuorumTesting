@@ -10,3 +10,4 @@ The two zip folders, aws_test.zip and azure_test.zip contain the test script and
     - AWS: "./aws_test/bats/bin/bats aws_test/aws_menu_test.bats"
     - Azure: "./azure_test/bats/bin/bats azure_test/azure_menu_test.bats"
 
+*Note: The azure_menu_test is modified to have certain tests behave differently than the aws_menu_test script. See comments in the script for details on why things were changed.
